@@ -2197,7 +2197,7 @@ var UnityLoader = UnityLoader || {
                 }
             }), UnityLoader.scheduleBuildDownloadJob(e, "downloadWasmFramework", "wasmFrameworkUrl"), UnityLoader.Job.schedule(e, "processWasmFramework", r, UnityLoader.processWasmFrameworkJob)
         } else {
-            if (!e.asmCodeUrl) return void t("Your browser does not support WebAssembly.");
+            // if (!e.asmCodeUrl) return void t("Your browser does not support WebAssembly.");
             UnityLoader.scheduleBuildDownloadJob(e, "downloadAsmCode", "asmCodeUrl"), UnityLoader.Job.schedule(e, "processAsmCode", ["downloadAsmCode"], UnityLoader.processAsmCodeJob), UnityLoader.scheduleBuildDownloadJob(e, "downloadMemoryInitializer", "asmMemoryUrl"), UnityLoader.Job.schedule(e, "processMemoryInitializer", ["downloadMemoryInitializer"], UnityLoader.processMemoryInitializerJob), e.memoryInitializerRequest = {
                 addEventListener: function(t, r) {
                     e.memoryInitializerRequest.callback = r
