@@ -9,7 +9,7 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/slice-garbage-v2 webgl build.json", {onProgress: UnityProgress})
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/slice-garbage-v2 webgl build.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
