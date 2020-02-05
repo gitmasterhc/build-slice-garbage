@@ -9,8 +9,7 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/slice-garbage-v2 webgl build.json", {onProgress: UnityProgress});
-      unityInstance.SetFullscreen(1)
+      UnityLoader.instantiate("unityContainer", "Build/slice-garbage-v2 webgl build.json", {onProgress: UnityProgress}).SetFullscreen(1)
     </script>
   </head>
   <body>
