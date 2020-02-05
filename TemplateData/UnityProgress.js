@@ -21,4 +21,5 @@ function UnityProgress(unityInstance, progress) {
   unityInstance.progress.empty.style.width = (100 * (1 - progress)) + "%";
   if (progress == 1)
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
+    unityInstance.SetFullscreen(1)
 }
